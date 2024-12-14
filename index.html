@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Routine App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the CSS File -->
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/psyssele.json"
+          trigger="loop"
+          delay="500"
+          style="width: 150px; height: 150px"
+        >
+        </lord-icon>
+      </center>
+
+      <div class="header">Daily Routine Notifications</div>
+      <div class="clock" id="clock">Loading current time...</div>
+
+      <!-- Buttons to choose predefined or custom tasks -->
+      <div class="option-buttons">
+        <button id="use-predefined-btn">Use Predefined Tasks</button>
+        <button id="set-own-alarm-btn">Set My Own Alarms</button>
+      </div>
+
+      <ul class="task-list" id="task-list"></ul>
+
+      <!-- Task editing form -->
+      <div class="task-form">
+        <input type="time" id="time-input" required />
+        <input
+          type="text"
+          id="activity-input"
+          placeholder="Task Activity"
+          required
+        />
+        <button id="add-task-btn">Add Task</button>
+      </div>
+
+      <div class="footer">Powered by GRIDVEM</div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Link to the JavaScript File -->
+  </body>
+</html>
